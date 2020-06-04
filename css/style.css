@@ -1,0 +1,1070 @@
+ @font-face {
+     font-family: MADE SAONARA;
+     src: url('MADE_SAONARA_PERSONAL_USE.otf');
+ }
+
+ @font-face {
+     font-family: Quicksand;
+     src: url('Quicksand_Light.otf');
+ }
+
+ /*--------Body begynder her---------*/
+
+ body {
+     width: auto;
+     height: auto;
+     color: black;
+     margin: 0;
+     padding: 0;
+     word-wrap: break-word;
+     color: #D68E97;
+
+ }
+
+ a {
+     color: white;
+     text-decoration: none;
+ }
+
+ p {
+     margin: 0;
+     font-family: quicksand;
+     color: #383838;
+     line-height: 25px;
+ }
+
+ /*--------Header begynder her---------*/
+
+ header {
+
+     background-color: #d68e97;
+     width: 100%;
+     height: auto;
+     color: #FFFFFF;
+     display: block;
+     position: fixed;
+     font-family: MADE SAONARA;
+     z-index: 1;
+ }
+
+
+
+ /*--------footer begynder her---------*/
+ footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     justify-content: space-around;
+     bottom: 0;
+     background-color: #d68e97;
+     width: 100%;
+     padding: 0px;
+     padding-bottom: 10px;
+     color: white;
+     font-size: 0.9em;
+ }
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+     text-align: center;
+ }
+
+ .someimg {
+     width: 15%;
+ }
+
+ .footerp {
+     margin: 0;
+     font-family: quicksand;
+     color: white;
+     line-height: 25px;
+ }
+
+
+ /* ---------footer begynder til mobile---------*/
+
+
+ /*-------- footer Media Queries------- */
+
+ @media all and (max-width : 768px) {
+     footer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     #footer-links,
+     #footer-some,
+     #footer-kundecenter,
+     #footer-kontakt {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .someimg {
+         width: 30px;
+         padding-bottom: 10px;
+     }
+ }
+
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+     text-align: center;
+ }
+
+
+ /* -----navbar begynder til desktop----- */
+
+ .toggle,
+ [id^=drop] {
+     display: none;
+
+ }
+
+ nav {
+     margin: 0;
+     padding: 0;
+     font-family: MADE SAONARA;
+
+ }
+
+ /* -----logo i navbar----- */
+
+ #logo {
+     display: block;
+     float: left;
+ }
+
+ /* -----kurv i navbar----- */
+ #kurv img{
+     display: block;
+     float: right;
+     position: relative;
+     margin-top: 15px;
+     margin-right: 15px;
+    width: 38px;
+    
+ }
+
+ .toggle,
+ [id^=drop] {
+     display: none;
+ }
+
+ nav {
+     margin: 0;
+     padding: 0;
+     background-color: #d68e97;
+ }
+
+
+ #logo {
+     position: relative;
+     display: block;
+     float: left;
+     padding-top: 10px;
+
+ }
+
+
+#main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.nav-icon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.nav-icon:before,
+.nav-icon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-icon:before {
+    top: 5px;
+}
+
+.nav-icon:after {
+    top: -5px;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #d68e97;
+}
+
+nav a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav ul li ul li:hover {
+    background: #d68e97;
+}
+
+nav a:hover {
+    background-color: mistyrose;
+    text-decoration: underline;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a:after {
+    content: ' ';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
+ /* ---------navbarbar/burger begynder til mobile---------*/
+
+
+ /*-------- Media Queries------- */
+
+
+@media all and (max-width : 768px) {
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        float: none;
+    }
+
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        background-color: #d68e97;
+        padding: 0 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+    }
+
+    .toggle:hover {
+        background-color: #d68e97;
+        text-align: center;
+    }
+
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+        text-align: center;
+    }
+
+    nav ul ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
+
+    nav ul ul {
+        float: none;
+        position: static;
+        color: white;
+        text-align: center;
+
+    }
+
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul ul ul li {
+        position: static;
+
+    }
+}
+
+
+
+ /* -----Bannere som forekommer på hver side-----*/
+ .bannere img{
+     max-width: 100%;
+     height: auto;
+     opacity: 70%;
+     padding-top: 75px;
+ }
+
+ /* -----breakstreg som forekommer for hvert afsnit-----*/
+
+ hr {
+     display: block;
+     height: 30px;
+     border: 0;
+     border-top: 1.6px solid #d68e97;
+     margin: 40px auto;
+     padding: 0;
+     text-align: center;
+     width: 80%;
+ }
+
+
+ /*----- Vores instafeed-----*/
+ #instafeed {
+
+     text-align: center;
+     justify-content: center;
+     width: 80%;
+     margin: auto;
+
+ }
+
+ #instaoverskrift {
+     text-align: center;
+     color: #d68e97;
+ }
+
+
+
+
+ /*----- styling af h2 + h3-----*/
+
+ h2 {
+     color: #d68e97;
+     font-family: MADE SAONARA;
+ }
+
+
+ h3 {
+     color: white;
+     font-family: MADE SAONARA;
+ }
+
+ /*-----Forside content begynder her -----*/
+
+ .forsideoverskrifter {
+     text-align: center;
+     color: #d68e97;
+     margin: auto;
+     line-height: 100px;
+
+ }
+
+ .vipper1side {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .vippeudpluk {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .produktbox {
+     background-color: #d68e97;
+     color: white;
+     text-align: center;
+     margin-right: 35px;
+     margin-left: 35px;
+     margin-bottom: 20%;
+ }
+
+ .produktimg {
+     width: 170px;
+     opacity: 0.75;
+     padding-bottom: 5px;
+ }
+
+ .vippep {
+     padding: 4px;
+ }
+
+
+
+ .knap {
+     width: 150px;
+     border: 1px solid #d68e97;
+     padding: 15px;
+     margin: 15px;
+     text-align: center;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 0.7em;
+     color: black;
+ }
+
+ .knap > a {
+     color: black !important;
+     text-decoration: none;
+ }
+
+
+ #forsidecontentkvalitet {
+     display: block;
+     width: auto;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+
+ #kvalitetsvipperboks {
+     width: 80%;
+     margin-bottom: 30px;
+     background-color: mistyrose;
+     border-style: solid;
+     border-width: 1px;
+     border-color: mistyrose;
+
+ }
+
+ #kvalibillede img {
+     display: inline-block;
+width: 40%;
+ }
+
+
+ /*--------footer begynder her---------*/
+ footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     justify-content: space-around;
+     bottom: 0;
+     background-color: #d68e97;
+     width: 100%;
+     padding: 0px;
+     padding-bottom: 10px;
+     color: white;
+     font-size: 0.9em;
+ }
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .someimg {
+     width: 15%;
+ }
+
+
+ /* ---------footer begynder til mobile---------*/
+
+
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+     footer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     #footer-links,
+     #footer-some,
+     #footer-kundecenter,
+     #footer-kontakt {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .someimg {
+         width: 30px;
+         padding-bottom: 10px;
+     }
+ }
+
+
+
+ .knap {
+     width: 150px;
+     border: 1px solid #d68e97;
+     padding: 15px;
+     margin: 15px;
+     text-align: center;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 0.7em;
+     color: black;
+ }
+
+ .knap > a {
+     color: black !important;
+     text-decoration: none;
+ }
+
+ #kvalitetsvipperboks {
+     display: flex;
+     flex-direction: row;
+     width: 80%;
+     margin-bottom: 40px;
+     margin: auto;
+     background-color: mistyrose;
+ }
+
+ #kvalibillede {
+     margin: auto;
+     width: 40%;
+     margin-bottom: 0;
+     margin-top: 0;
+ }
+
+ #kvalitext {
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     margin-right: 10%;
+     padding-left: 50px;
+     padding-bottom: 10%;
+     padding-top: 10%;
+ }
+
+ /* ---------section med kvalitetsvipper begynder til mobile---------*/
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+
+     #kvalibillede {
+         margin: auto;
+         width: 40%;
+     }
+
+     #kvalitext {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin-right: 1%;
+         padding-left: 10px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+
+ }
+
+ /*-----guide begynder her-----*/
+
+ .guideoverskrifter {
+     text-align: center;
+     color: #d68e97;
+ }
+
+
+ #guidevideo{
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     
+ }
+
+video{
+    width: 80%;}
+
+ /*----- om os begynder her-----*/
+ #omosoverskrift {
+     text-align: center;
+     padding: 50px;
+ }
+
+ .omkarma {
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-bottom: 15px;
+ }
+
+ .omimg {
+     width: 40%;
+     height: auto;
+ }
+
+ #om1 {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     font-size: 0.9em;
+     width: 100%;
+ }
+
+
+ #om2 {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+     font-size: 0.9em;
+     width: 100%;
+ }
+
+ .omp1 {
+     width: 50%;
+     padding: 20px;
+     text-align: left;
+ }
+
+ .omp2 {
+     width: 50%;
+     padding: 20px;
+     text-align: right;
+
+ }
+
+ /*-------Mobil version til 'Om Os' begynder her---------*/
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+
+     .omkarma {
+         margin: 0;
+     }
+
+     .omimg {
+         width: 80%;
+     }
+
+     #om1 {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 0.9em;
+         width: 100%;
+
+     }
+
+
+     #om2 {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 0.9em;
+         width: 100%;
+     }
+
+     .omp1 {
+         width: 70%;
+         padding-top: 30px;
+         padding-bottom: 30px;
+     }
+
+     .omp2 {
+         text-align: left;
+         width: 70%;
+         padding-top: 30px;
+     }
+
+     .kontakt-brodtekst {
+         font-size: 15px;
+         margin: 10px;
+         text-align: center;
+         line-height: 22px;
+     }
+
+ }
+
+
+ /*----- produkt/vippeside begynder her-----*/
+
+ .vippetopp {
+     text-align: center;
+     padding-bottom: 20px;
+     margin-left: 30%;
+     margin-right: 30%;
+ }
+
+ /*-------Mobil version til 'Vipper' begynder her---------*/
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+     .vippetopp {
+         margin-top: 15px;
+         margin-bottom: 25px;
+         margin-left: auto;
+         margin-right: auto
+     }
+ }
+
+ /*---------Side med konkret produkt begynder her/karma vippe ---------*/
+
+ .spaceboks {
+     height: 100px;
+ }
+
+#flereimgsection1{
+    display: flex;
+     flex-direction: row;
+     align-content: center;
+     padding-top: 15px;
+}
+
+.sat{
+    display: flex;
+     flex-direction: column;
+   
+}
+
+ .kobsection {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 80%;
+
+ }
+
+
+
+
+
+ .kobimg {
+     padding: 25px;
+      width: 45%;
+ }
+
+
+ .kob2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30%;
+
+ }
+
+ .kobp {
+     width: 80%;
+
+ }
+
+ .kobknap {
+     width: 150px;
+     border: 1px solid #d68e97;
+     padding: 15px;
+     margin-top: 15px;
+     text-align: center;
+     font-size: 0.7em;
+     color: black;
+
+ }
+
+#karmavippekob{
+  
+   display: block;
+    width: auto;
+    margin: auto;
+    
+}
+
+ .kobknap > a {
+     text-decoration: none;
+     color: black;
+     font-family: quicksand;
+ }
+
+ .flereimgsection {
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     padding-top: 15px;
+ }
+
+ .flereimg {
+     width: 80%;
+     padding-right: 1%;
+     padding-top: 1%;
+ }
+
+ .andre {
+     color: black;
+     text-align: center;
+     display: flex;
+     display: block;
+     
+     
+ }
+
+ /*--------Mobil version af køb siden------------*/
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+
+     .kobsection {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .kobimg {
+         width: 100%;
+     }
+
+     .kobp {
+         width: 400px;
+     }
+
+     .kob2 {
+         display: flex;
+         padding-left: 20px;
+
+     }
+
+     .flereimgsection {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+
+     .flereimg {
+         width: 100px;
+         padding-top: 15px;
+         padding-right: 10px;
+     }
+
+     .koboverskrift {
+         width: 200px;
+     }
+ }
+
+
+ /*----- kontakt begynder her-----*/
+
+
+ .kontaktoverskrifter {
+     text-align: center;
+     color: #d68e97;
+     padding-top: 95px
+ }
+
+ .kontakt-brodtekst {
+     font-size: 15px;
+     margin: 10px;
+     text-align: center;
+ }
+
+ .hrkontakt {
+     display: block;
+     border-top: 1.2px solid #d68e97;
+     text-align: center;
+     width: 80%;
+     padding: 0px;
+ }
+
+ .flexcontainer-kontaktikoner {
+     text-align: center;
+     flex-direction: row;
+     display: flex;
+    justify-content: center;
+
+ }
+
+#sporgsmalikon img{
+    width: 80%;
+}
+
+#bobelikon img{
+    width: 80%;
+}
+
+#checkikon img{
+    width: 80%;
+}
+
+
+
+ /*kontaktform*/
+
+ .fuldenavn,
+ .email,
+ .subject {
+     width: 300px;
+     margin-bottom: 16px;
+ }
+
+ label,
+ input,
+ textarea {
+     display: block;
+     line-height: 30px;
+ }
+
+ .kontakt-container {
+     border-radius: 1px;
+     background-color: whitesmoke;
+     padding: 30px;
+     margin: auto;
+     max-width: 400px;
+     margin-bottom: 20px;
+     margin-top: 30px;
+
+ }
+
+ input[type=submit]:hover {
+     background-color: mistyrose;
+     
+ }
+
+ [type=submit] {
+     width: 100px;
+     border: 1px solid #d68e97;
+     padding: 1px;
+     margin-top: 15px;
+     text-align: center;
+     font-size: 0.7em;
+     color: black;
+     background-color: white
+ }
+
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+ }
+
+ /*------kontaktform slut-------*/
+
+
+
+
+
+ /*----- kurv begynder her-----*/
+
+ .kurvoverskrifter {
+     text-align: center;
+     color: #d68e97;
+ }
+
+ #selvekurven {
+
+     align-content: center;
+     justify-content: center;
+     text-align: center;
+    
+ }
+
+ .kurvcontainer {
+     align-content: center;
+     justify-content: center;
+     text-decoration: none;
+     list-style: none;
+     margin: auto;
+     
+ }
+
+ #getKurv {
+    
+     align-content: center;
+     background-color: #d68e97;
+     color: white;
+     
+ }
+
+
+.list-group-item{
+    list-style-type: none;
+}
