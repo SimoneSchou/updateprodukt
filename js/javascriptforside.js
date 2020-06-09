@@ -3,7 +3,6 @@
 
 
 
-
 function mouseOver() {
   document.getElementsByClassName(".produktbox").style.color = "red";
 
