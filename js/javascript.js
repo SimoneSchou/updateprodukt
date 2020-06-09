@@ -62,5 +62,3 @@ $(document).ready(function() {
   })  
 }) 
 // kontaktform er slut
-
-
