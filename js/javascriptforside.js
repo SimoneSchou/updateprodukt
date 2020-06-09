@@ -13,3 +13,11 @@ function normalImg(x) {
 function myFunction() {
   alert("Fri fragt ved køb over 500 kr!");
 }
+
+
+
+
+//kontaktform der forbygger spammails
+
+var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'idse1997' + '@' + 'hotmail' + '.' + 'com');
