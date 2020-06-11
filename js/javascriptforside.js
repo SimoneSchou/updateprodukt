@@ -11,5 +11,5 @@ function normalImg(x) {
 
 
 function myFunction() {
-  alert("Fri fragt ved køb over 500 kr!");
+  alert("Fri fragt ved køb over 500 kr & 1-2 dags levering!");
 }
