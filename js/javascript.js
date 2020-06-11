@@ -10,7 +10,6 @@ console.log('Filen virker');
 
 $(document).ready(function() {
   $('.submit').click(function (event){
-      event.preventDefault();
       console.log('clicked button');
       
 /*event.preventdefault forhindre at der sker en default action med vores knap, så den ikke sender en formular */
@@ -61,4 +60,5 @@ $(document).ready(function() {
       
   })  
 }) 
+
 // kontaktform er slut

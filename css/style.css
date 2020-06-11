@@ -462,7 +462,7 @@ li > a:only-child:after {
      margin-right: 35px;
      margin-left: 35px;
      margin-bottom: 20%;
-     
+     padding: 10px;
  }
 
  .produktimg {

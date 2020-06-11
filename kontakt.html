@@ -125,7 +125,7 @@ meget gerne høre fra dig.</p>
     
       <div class="kontakt-container">
     
-    <form action="https://formspree.io/idse1997@hotmail.com" method="POST">
+    <form id="contactform" method="POST">
        <label>
             Navn
             <input class="fullname" name="name" placeholder="Dit fulde navn">
@@ -143,8 +143,9 @@ meget gerne høre fra dig.</p>
             <textarea placeholder="Skriv besked her..." name="message" class="message"></textarea>
             </label>
                <div class="status">
-                   
                </div>
+               
+               <input type="text" name="_gotcha" style="display:none" />    
         <input type="submit" value="Send" class="submit">
         </form>
 </div>
@@ -184,7 +185,7 @@ meget gerne høre fra dig.</p>
     </footer>
 
 
- 
+    <script src="js/javascriptforside.js"></script>
 </body>
 
 </html>
